@@ -1,3 +1,4 @@
+
 import cipher from './cipher.js';
 
 function encode() {
@@ -15,5 +16,14 @@ function encode() {
     }
 }
 
+function recibir()
+    {
+        var valor = document.getElementById("texto").value;
+        document.getElementById("usr").innerHTML=valor;
+        var valor = document.getElementById("password").value;
+        document.getElementById("decode").innerHTML=valor; 
+        
+    }       
 console.log(encode);
 window.encode = encode;
+window.recibir = recibir;

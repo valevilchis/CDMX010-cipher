@@ -3,32 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-        <form >
-            <h2>Usuario:</h2>
-            <input type="text" class="text" id="user">
-            <br>
-            <h2>Contraseña:</h2>
-            <input type="password" class="contraseña" id="contraseña">
-            <br>
-            <h2>Desplazamiento:</h2>
-            <input type="number" class="offset" id="desplazamiento">
-            <br>
-            <input type="button" class="btn" onclick="encode()" value="Codificar">
-            <input type="button" class="btn" onclick="" value="Decodificar">
-            <br>
-            <br>
-            <input type="text" id="user">
-            <input type="text" id="resultado-codificado">
-            <input type="text" id="resultado-entrada">
-            <br>
-            <br>
-            <input type="reset" class="limpiar" value="Borrar">
-        </form>
+    <div class="informacion">
+      <p>Creación de usuarios y contraseñas.</p>
+      <p>Más seguridad para la encriptación de contraseñas.</p>
+      <form method="post">
+        <h2> <br> Cipher</h2>
+        <input type="text" id="texto" placeholder="Usuario"/>
+        <input type="password" id="password" placeholder="Contraseña"/>
+        <input type="number">
+        <input type="button" class="but" name="enviar" value="Enviar" onclick="recibir();"/><br>
+      </form>
+        <div class="tabla">
+          <table>
+            <tr>
+              <th>Usuario</th>
+              <th>Decode</th>
+              <th>Encode</th>
+            </tr>
+            <tr>
+              <td id="usr"></td>
+              <td id="decode"></td>
+              <td id="encode"></td>
+            </tr>
+          </table>
+        </div>
     </div>
+    <div class="button" onClick="window.location.href='index.html'">RETURN</div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
