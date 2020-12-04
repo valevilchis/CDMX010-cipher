@@ -1,16 +1,13 @@
+/*Estilo del cuerpo*/
 body {
     flex: content;
-    background-color: #151515;
+    background-image: url(img/fondo);
     color: #eee;
     font-family: 'Share Tech Mono', monospace;
     user-select: none;
 }
-
-.hidden {
-    display: none;
-}
-
-.info {
+/*Estilo index.html*/
+.informacion {
     text-align: center;
     top: 0;
     left: 0;
@@ -20,14 +17,16 @@ body {
 .green {
     color: #0cff00;
 }
+
 .pink {
     color: #ff2df5;
-
 }
 
 .button {
+    text-align: center;
     background-color: #111;
     border: solid 1px #4CFF13;
+    border-radius: 5px;
     padding: 8px 25px;
     font-size: 26px;
     letter-spacing: 2px;
@@ -39,4 +38,37 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.return {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+/*Estilo formulario.html*/
+form {
+    background-color: #333333;
+    width: 340px;
+    border: 1px #4e4d4d;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow:inset 0 0 10px #111;
+    margin: 100px auto;
+}
+
+form input {
+    width: 280px;
+    height: 35px;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    color: #6d6d6d;
+    text-align: center;
+}
+
+.tabla {
+    border: 1pt solid #bfb;
+    text-align: center;
 }
