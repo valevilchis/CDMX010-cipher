@@ -22,6 +22,33 @@ function recibir()
         var valor = document.getElementById("password").value;
         document.getElementById("decode").innerHTML=valor; 
         
-    }       */
-console.log(encode);
+    } */
+
+let userEntrada = "";
+let passEntrada = "";
+let offset = 0;
+let passSalida = "";
+
+function encode() {
+    userEntrada = document.getElementById("user").value;
+    passEntrada = document.getElementById("password").value;
+    offset = Number.parseInt(document.getElementById("desplazamiento").value);
+
+    if (userEntrada == "") {
+        alert("Usuario requerido.");
+    } else if (passEntrada == "") {
+        alert("Contraseña requerida.");
+    } else if (offset <= 0 || offset == "") {
+        alert("Seleccione un rango de desplazamiento.")
+    } else {
+        document.getElementById("usr").innerHTML = userEntrada;
+        document.getElementById("decode").innerHTML = passEntrada;
+
+        passSalida = cipher.encode(passEntrada,offset);
+        document.getElementById("encode").innerHTML = passSalida;
+        document.getElementById("user").reset();
+        document.getElementById("desplazamiento").reset();
+    }
+}
+
 window.encode = encode;

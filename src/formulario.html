@@ -14,17 +14,17 @@
       <p>Más seguridad para la encriptación de contraseñas.</p>
       <form method="post">
         <h2> <br> Cipher</h2>
-        <input type="text" id="texto" placeholder="Usuario"/>
+        <input type="text" id="user" placeholder="Usuario"/>
         <input type="password" id="password" placeholder="Contraseña"/>
         <input type="number" id="desplazamiento">
-        <input type="button" class="but" name="enviar" value="Enviar" onclick="recibir();"/><br>
+        <input type="button" class="but" name="enviar" value="Enviar" onclick="encode();"/><br>
       </form>
         <div class="tabla">
           <table>
             <tr>
               <th>Usuario</th>
-              <th>Decode</th>
-              <th>Encode</th>
+              <th>Descodificado</th>
+              <th>Codificado</th>
             </tr>
             <tr>
               <td id="usr"></td>
