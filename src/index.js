@@ -31,7 +31,7 @@ let passSalida = "";
 
 function encode() {
     userEntrada = document.getElementById("user").value;
-    passEntrada = document.getElementById("password").value;
+    passEntrada = (document.getElementById("password").value).toUpperCase();
     offset = Number.parseInt(document.getElementById("desplazamiento").value);
 
     if (userEntrada == "") {

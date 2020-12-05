@@ -15,7 +15,7 @@ const cipher = {
 
         for (let i=0; i < textoEntrada.length; i++) {
           let caracterSalida = textoEntrada.charCodeAt(i);
-          let caracterDespla = ((caracterSalida + 65 - desplazamiento) % 26 + 65);
+          let caracterDespla = ((caracterSalida - 65 + desplazamiento) % 26 + 65);
           textoSalida += String.fromCharCode(caracterDespla);
         }
         return textoSalida;
