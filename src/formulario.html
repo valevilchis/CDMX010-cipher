@@ -19,7 +19,7 @@
         <input type="number" id="desplazamiento">
         <input type="button" class="but" name="enviar" value="Enviar" onclick="encode();"/><br>
       </form>
-        <div class="tabla">
+       <!-- <div class="tabla">
           <table>
             <tr>
               <th>Usuario</th>
@@ -32,6 +32,24 @@
               <td id="encode"></td>
             </tr>
           </table>
+        </div>-->
+        <div id="table-scroll" class="table-scroll">
+          <div class="table-wrap">
+            <table class="main-table">
+              <thead>
+                <tr>
+                  <th scope="col">Usuario</th>
+                  <th scope="col">Descodificada</th>
+                  <th scope="col">Codificada</th>
+                </tr>
+              </thead>
+                <tr>
+                  <td id="usr"></td>
+                  <td id="decode"></td>
+                  <td id="encode"></td>
+                </tr>
+            </table>
+          </div>
         </div>
     </div>
     <div class="button" onClick="window.location.href='index.html'">RETURN</div>
