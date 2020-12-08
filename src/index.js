@@ -1,6 +1,5 @@
 
 import cipher from './cipher.js';
-
 /*function encode(password, desplazamiento) {
     let textoEntrada = password;
     let desplazamiento = desplazamiento;
@@ -12,17 +11,14 @@ import cipher from './cipher.js';
       let caracterDespl = ((caracterSalida - 65 + desplazamiento) % 26 + 65);
       let cifrado = String.fromCharCode(caracterDespl);
       console.log(cifrado);
-     
     }
 }
-function recibir()
-    {
-        var valor = document.getElementById("texto").value;
-        document.getElementById("usr").innerHTML=valor;
-        var valor = document.getElementById("password").value;
-        document.getElementById("decode").innerHTML=valor; 
-        
-    } */
+function recibir() {
+    var valor = document.getElementById("texto").value;
+    document.getElementById("usr").innerHTML=valor;
+    var valor = document.getElementById("password").value;
+    document.getElementById("decode").innerHTML=valor; 
+} */
 
 let userEntrada = "";
 let passEntrada = "";
@@ -38,17 +34,20 @@ function encode() {
         alert("Usuario requerido.");
     } else if (passEntrada == "") {
         alert("Contraseña requerida.");
-    } else if (offset <= 0 || offset == "") {
+    } else if (offset <= 0 || offset == undefined) {
         alert("Seleccione un rango de desplazamiento.")
     } else {
         document.getElementById("usr").innerHTML = userEntrada;
-        document.getElementById("decode").innerHTML = passEntrada;
-
+        /*document.getElementById("decode").innerHTML = passEntrada;*/
         passSalida = cipher.encode(passEntrada,offset);
         document.getElementById("encode").innerHTML = passSalida;
-        document.getElementById("user").reset();
-        document.getElementById("desplazamiento").reset();
     }
 }
 
+function decode (){
+
+
+}
+
 window.encode = encode;
+window.decode = decode;

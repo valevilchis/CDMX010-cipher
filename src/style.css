@@ -1,4 +1,4 @@
-/*Estilo del cuerpo*/
+/*/*Estilo del cuerpo
 body {
     flex: content;
     background-image: url(img/fondo);
@@ -6,7 +6,7 @@ body {
     font-family: 'Share Tech Mono', monospace;
     user-select: none;
 }
-/*Estilo index.html*/
+/*Estilo index.html
 .informacion {
     text-align: center;
     top: 0;
@@ -47,7 +47,7 @@ body {
     left: 50%;
     transform: translate(50%, 50%);
 }
-/*Estilo formulario.html*/
+/*Estilo formulario.html
 form {
     background-color: #333333;
     width: 340px;
@@ -68,7 +68,7 @@ form input {
     text-align: center;
 }
 
-/*Estilo tabla*/
+/*Estilo tabla
 .table-scroll {
 	position:relative;
 	max-width:600px;
@@ -98,3 +98,4 @@ form input {
 	left:0;
 	pointer-events:none;
 }
+*/
