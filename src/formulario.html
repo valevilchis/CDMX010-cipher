@@ -12,39 +12,19 @@
       <p>Creación de usuarios y contraseñas.</p>
       <p>Más seguridad para la encriptación de contraseñas.</p>
       <form method="POST">
-        <h2> <br> Cipher</h2>
+        <h2><br>Cifrar</h2>
         <input type="text" id="user" placeholder="Usuario"/>
-        <input type="password" id="password" placeholder="Contraseña"/>
+        <input type="password" id="password" maxlength="10" placeholder="Contraseña"/>
         <input type="number" id="desplazamiento" placeholder="Desplazamiento">
-        <!--<input type="text" id="pass-cif" placeholder="Cifrado"/>-->
-        <!--<button onclick="encode()">Crear</button>-->
-        <!--<div id="elementsBefore" style="display:none;">
-            <input type="text" id="codificado" placeholder="Código"/>
-            <input ype="button" class="but" name="enviar" value="Descifrar" onclick="decode()"/><br>
-        </div>-->
-        <input type="button" class="but" name="enviar" value="Cifrar" onclick="encode()"/>
+        <input type="button" class="but" name="enviar" value="Enviar" id="encodeM"/>      
       </form>
-       <!-- <div class="tabla">
-          <table>
-            <tr>
-              <th>Usuario</th>
-              <th>Descodificado</th>
-              <th>Codificado</th>
-            </tr>
-            <tr>
-              <td id="usr"></td>
-              <td id="decode"></td>
-              <td id="encode"></td>
-            </tr>
-          </table>
-        </div>-->
         <div id="table-scroll" class="table-scroll">
           <div class="table-wrap">
             <table class="main-table">
               <thead>
                 <tr>
                   <th scope="col">Usuario</th>
-                  <th scope="col">Codificada</th>
+                  <th scope="col">Password Cifrado</th>
                 </tr>
               </thead>
                 <tr>
@@ -54,26 +34,35 @@
             </table>
           </div>
         </div>
-        <!--<div id="table-scroll" class="table-scroll">
-          <div class="table-wrap">
-            <table class="main-table">
-              <thead>
-                <tr>
-                  <th scope="col">Usuario</th>
-                  <th scope="col">Codificada</th>
-                  <th scope="col">Descodificado</th>
-                </tr>
-              </thead>
-                <tr>
-                  <td id="usr"></td>
-                  <td id="decode"></td>
-                  <td id="encode"></td>
-                </tr>
-            </table>
-          </div>-->
+        <div id="decode" style="display: none;">
+          <form method="POST">
+            <h2><br>Descifrar</h2>
+            <input type="text" id="codigo" maxlength="10" placeholder="Código"/>
+            <input type="button" class="but" name="enviar" value="Descifrar" id="decodeM"/>
+          </form>
+          <div id="table-scroll" class="table-scroll">
+            <div class="table-wrap">
+              <table class="main-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Offset</th>
+                    <th scope="col">Password Cifrado</th>
+                    <th scope="col">Password Descifrado</th>
+                  </tr>
+                </thead>
+                  <tr>
+                    <td id="usr-d"></td>
+                    <td id="off-d"></td>
+                    <td id="encode-d"></td>
+                    <td id="decode-d"></td>
+                  </tr>
+              </table>
+            </div>
+          </div>
         </div>
     </div>
-    <div class="button" onClick="window.location.href='index.html'">RETURN</div>
-    <script src="index.js" type="module"></script>
+    <div class="button return" onClick="window.location.href='index.html'">RETURN</div>
+  <script src="index.js" type="module"></script>
   </body>
 </html>
