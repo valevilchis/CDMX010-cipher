@@ -4,5 +4,5 @@ En este proyecto el **Desplazamiento/Offset** sera a elección del usuario.
   _Ejemplo de posicionameinto de Alfabeto natural, con desplazamiento de 3._
 ```
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+D E F G H I J K L M N O P Q R S T U V W X Y Z **A B C**
 ```
